@@ -6,6 +6,7 @@ html {
 }
 html, body {
     height: 100%;
+    background-image: url("../loading BG.png");
 }
 canvas {
     display: block;
@@ -20,7 +21,7 @@ body {
 #unity-canvas {
     width: 100%;
     height: 100%;
-    background: #231F20;
+    /*background: #231F20;*/
 }
 #loading-cover {
     position: absolute;
@@ -46,17 +47,18 @@ body {
     max-width: 80%;
 }
 #unity-progress-bar-empty {
-    width: 80%;
-    height: 24px;
+    width: 40%;
+    height: 12px;
     margin: 10px 20px 20px 10px;
     text-align: left;
-    border: 1px solid white;
-    padding: 2px;
+    border: 2px solid white;
+    border-radius: 5px;
 }
 #unity-progress-bar-full {
     width: 0%;
     height: 100%;
-    background: white;
+    border-radius: 5px;
+    background: #8CBD36;
 }
 .light #unity-progress-bar-empty {
     border-color: black;
